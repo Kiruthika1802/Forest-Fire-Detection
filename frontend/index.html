@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Forest Fire Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Forest Fire Detection</h1>
+    </header>
+    <!-- Navbar -->
+    <nav>
+
+        <div class="navbar">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+
+        <main class="dashboard">
+
+            <section class="card fire-map">
+                <h2>🗺 Real-Time Fire Map</h2>
+                <div id="map"></div>
+                <button id="openMap">View in Google Maps</button>
+            </section>
+
+
+            <section class="card fire-alerts">
+                <h2>Live Alerts</h2>
+                <button id="notifyButton"> Get Notifications</button>
+                <ul id="alertList">
+                    <li>No new alerts</li>
+                </ul>
+            </section>
+
+            <section class="card fire-stats">
+                <h2>Fire Statistics</h2>
+                <canvas id="fireChart"></canvas>
+            </section>
+
+            <section class="card report-fire">
+                <h2> Report a Fire</h2>
+                <input type="text" id="location"
+                    placeholder="Enter specific location (e.g., Forest Area, Landmark, City)">
+                <div class="upload-container">
+                    <label for="fireImage" class="upload-label">
+                        <i class="fas fa-camera"></i>
+                        Upload Image
+                    </label>
+                    <input type="file" id="fireImage" accept="image/*" style="display: none"
+                        onchange="previewImage(event)">
+                </div>
+                <div id="imagePreview"></div>
+                <button onclick="reportFire()">Submit</button>
+            </section>
+
+            <section class="card weather">
+
+                <div class="container">
+                    <h2>Weather Monitoring</h2>
+
+                    <label for="temperature">Temperature (°C):</label>
+                    <input type="number" id="temperature" placeholder="Enter Temperature">
+
+                    <label for="humidity">Humidity (%):</label>
+                    <input type="number" id="humidity" placeholder="Enter Humidity">
+
+                    <label for="oxygen">Oxygen Level (%):</label>
+                    <input type="number" id="oxygen" placeholder="Enter Oxygen Level">
+
+                    <label for="windSpeed">Wind Speed (km/h):</label>
+                    <input type="number" id="windSpeed" placeholder="Enter Wind Speed">
+
+                    <button id="predictButton" type="button">Predict Fire Risk</button>
+
+                    <!-- Add this div for displaying the result -->
+                    <div id="fireRiskLevel" class="result"></div>
+                </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+        <script>
+            document.getElementById("openMap").addEventListener("click", function () {
+                window.open("https://www.google.com/maps/search/forest+fire+India", "_blank");
+            });
+        </script>
+        <h1></h1>
+</body>
+
+</html>

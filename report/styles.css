@@ -1,0 +1,118 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #388E3C;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content */
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.prevention-box {
+    border: 2px solid #2e7d32; /* Green border */
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: #f0f8f0; /* Light green background */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prevention-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.prevention-box li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.safety-box {
+    border: 2px solid #2e7d32; /* Green border */
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: #f0f8f0; /* Light green background */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.safety-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.safety-box li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.emergency-box {
+    border: 2px solid #2e7d32; /* Green border */
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+    background-color: #f0f8f0; /* Light green background */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.emergency-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.emergency-box li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
