@@ -204,3 +204,19 @@ button:hover {
     max-width: 100%;
     border-radius: 4px;
 }
+
+/* Remove or comment out the existing blog-preview related styles */
+/* Blog Preview Section */
+/* .blog-preview, .blog-cards, .blog-card, .blog-link { ... } */
+
+/* Ensure the report pages inherit styles */
+.safety-box,
+.prevention-box,
+.emergency-box {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
